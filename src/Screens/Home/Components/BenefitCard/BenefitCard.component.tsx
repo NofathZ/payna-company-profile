@@ -3,6 +3,7 @@ type BenefitCardType = {
   img: any;
   title: string;
   description: string;
+  alt: string;
 };
 
 /**
@@ -14,14 +15,15 @@ const BenefitCard = ({
   img,
   title,
   description,
+  alt
 }: BenefitCardType): JSX.Element => {
   return (
     <div className="grid grid-cols-[60px_auto] gap-x-6">
-      <img className="rounded-full" src={img} width={60} height={60} />
+      <img className="rounded-full" src={img} width={60} height={60} alt={alt} />
       <div>
-        <p className="font-poppins font-semibold text-[20px] text-[#070F18] mb-3">
+        <h3 className="font-poppins font-semibold text-[20px] text-[#070F18] mb-3">
           {title}
-        </p>
+        </h3>
         <p className="font-poppins font-normal text-[16px] text-[#575455] leading-[32px]">
           {description}
         </p>

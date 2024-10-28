@@ -22,12 +22,12 @@ import { BenefitCard } from "./Components";
  */
 function _renderBanner(): JSX.Element {
   return (
-    <div className="grid grid-cols-[auto] lg:grid-cols-[auto_540px] gap-x-[180px] mb-[50px] md:mb-[70px]">
+    <section className="grid grid-cols-[auto] lg:grid-cols-[auto_540px] gap-x-[180px] mb-[50px] md:mb-[70px]">
       <div>
-        <p className="font-poppins font-bold text-[38px] md:text-[55px] mb-5 text-[#070F18] text-left md:text-center lg:text-left">
+        <h1 className="font-poppins font-bold text-[38px] md:text-[55px] mb-5 text-[#070F18] text-left md:text-center lg:text-left">
           Manage Payroll <br />
           Like an Expert
-        </p>
+        </h1>
         <p className="font-poppins font-normal text-[16px] leading-[32px] text-[#575455] mb-[30px] text-left md:text-center lg:text-left">
           Payna is helping you to setting up the payroll without <br />
           required any finance skills or knowledge before
@@ -42,15 +42,15 @@ function _renderBanner(): JSX.Element {
         <img
           className="absolute top-[120px] -left-[150px]"
           src={HomeBannerAnalyticsImage}
-          alt=""
+          alt="home-banner-analytics"
         />
         <img
           className="absolute top-[40px] -right-[70px]"
           src={HomeBannerBulkExportImage}
-          alt=""
+          alt="home-banner-bulk"
         />
       </div>
-    </div>
+    </section>
   );
 }
 
@@ -61,19 +61,19 @@ function _renderBanner(): JSX.Element {
  */
 function _renderPartner(): JSX.Element {
   return (
-    <div className="flex justify-between md:justify-center lg:justify-between mb-[80px] md:mb-[130px] flex-wrap lg:flex-nowrap">
+    <section className="flex justify-between md:justify-center lg:justify-between mb-[80px] md:mb-[130px] flex-wrap lg:flex-nowrap">
       <span className="font-poppins font-semibold text-[16px] mb-[30px]">
         Trusted by <br className="hidden lg:block" />
         Global Companies
       </span>
       <div className="flex self-start flex-wrap">
-        <img className="mr-[25px] mb-[25px]" src={AppleLogo} height={30} />
-        <img className="mr-[25px] mb-[25px]" src={AdobeLogo} height={30} />
-        <img className="mr-[25px] mb-[25px]" src={SlackLogo} height={30} />
-        <img className="mr-[25px] mb-[25px]" src={SpotifyLogo} height={30} />
-        <img className="mr-[25px] mb-[25px]" src={GoogleLogo} height={30} />
+        <img className="mr-[25px] mb-[25px]" src={AppleLogo} height={30} alt="apple-logo" />
+        <img className="mr-[25px] mb-[25px]" src={AdobeLogo} height={30} alt="adobe-logo" />
+        <img className="mr-[25px] mb-[25px]" src={SlackLogo} height={30} alt="slack-logo" />
+        <img className="mr-[25px] mb-[25px]" src={SpotifyLogo} height={30} alt="spotify-logo" />
+        <img className="mr-[25px] mb-[25px]" src={GoogleLogo} height={30} alt="google-logo" />
       </div>
-    </div>
+    </section>
   );
 }
 
@@ -84,14 +84,14 @@ function _renderPartner(): JSX.Element {
  */
 function _renderBenefit(): JSX.Element {
   return (
-    <div className="mb-[80px] md:mb-[130px]">
+    <section className="mb-[80px] md:mb-[130px]">
       <div className="max-w-[390px] mx-auto mb-[50px] md:mb-[70px]">
-        <p className="text-center font-poppins font-bold text-[16px] text-[#F75C4E] mb-[6pxc]">
+        <h3 className="text-center font-poppins font-bold text-[16px] text-[#F75C4E] mb-[6pxc]">
           WORK BETTER
-        </p>
-        <p className="text-center font-poppins font-bold text-[28px] md:text-[36px] text-[#070F18] mb-5">
+        </h3>
+        <h2 className="text-center font-poppins font-bold text-[28px] md:text-[36px] text-[#070F18] mb-5">
           For Your Business
-        </p>
+        </h2>
         <p className="text-center font-poppins font-normal text-[16px] text-[#575455]">
           We did research what your company needs and here we are providing all
           of them just for you
@@ -102,34 +102,40 @@ function _renderBenefit(): JSX.Element {
           img={BenefitShareInsightIcon}
           title="Share Insights"
           description="Working together with your team to make decisions"
+          alt="share-insight-icon"
         />
         <BenefitCard
           img={BenefitTrackLeadsIcon}
           title="Track Leads"
           description="See where your money goes and comes in business"
+          alt="track-leads-icon"
         />
         <BenefitCard
           img={BenefitOfflineModeIcon}
           title="Offline Mode"
           description="Use the feature while off from internet? sure can"
+          alt="offline-mode-icon"
         />
         <BenefitCard
           img={BenefitKanbanModeIcon}
           title="Kanban Mode"
           description="Organize the report that easy to be understand"
+          alt="kanban-mode-icon"
         />
         <BenefitCard
           img={BenefitRewardSystemIcon}
           title="Reward System"
           description="Motivate your team working harder and receive a gift"
+          alt="reward-system-icon"
         />
         <BenefitCard
           img={Benefit189CountryIcon}
           title="189 Country"
           description="Working together worldwide people from anywhere"
+          alt="189-country-icon"
         />
       </div>
-    </div>
+    </section>
   );
 }
 
@@ -140,24 +146,25 @@ function _renderBenefit(): JSX.Element {
  */
 function _renderContactUs(): JSX.Element {
   return (
-    <div className="grid grid-cols-[auto] xl:grid-cols-[635px_auto] gap-[50px] lg:gap-[70px]">
+    <section className="grid grid-cols-[auto] xl:grid-cols-[635px_auto] gap-[50px] lg:gap-[70px]">
       <div className="w-[321px] h-[227px] lg:w-[522px] lg:h-[369px] xl:w-[635px] xl:h-[450px] bg-home-contact bg-contain rounded-[30px] md:rounded-[40px] xl:rounded-[60px] flex justify-center items-center mx-auto xl:mx-0">
         <img
           className="cursor-pointer"
           src={ButtonPlayIcon}
           width={70}
           height={70}
+          alt="play-icon"
         />
       </div>
       <div className="flex justify-center xl:justify-start">
         <div className="flex items-center max-w-[480px]">
           <div>
-            <p className="font-poppins font-bold text-[16px] text-[#F75C4E] mb-[6px] text-center xl:text-left">
+            <h3 className="font-poppins font-bold text-[16px] text-[#F75C4E] mb-[6px] text-center xl:text-left">
               SAVE MORE TIME
-            </p>
-            <p className="font-poppins font-bold text-[28px] md:text-[36px] text-[#070F18] mb-5 text-center xl:text-left">
+            </h3>
+            <h2 className="font-poppins font-bold text-[28px] md:text-[36px] text-[#070F18] mb-5 text-center xl:text-left">
               And Boost Productivity
-            </p>
+            </h2>
             <p className="font-poppins font-normal text-[16px] text-[#575455] mb-10 text-center xl:text-left">
               Your employees can bring any success into your business, so we
               need to take care of them
@@ -175,7 +182,7 @@ function _renderContactUs(): JSX.Element {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
